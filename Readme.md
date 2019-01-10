@@ -33,8 +33,4 @@ To run the algorithm, execute the command
 The code expects the data directories to be stored under ../Datasets/ directory and the exact details of the ratings and meta-data files to be updated in data_utils.py file
 
 ```
-##Results
 
-The results are stored in the data directory.  Under the data directory, the 
-``` result_%d.log ```
-contains the values of all the performance metrics mentioned in the paper.
