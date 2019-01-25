@@ -99,12 +99,13 @@ def split_train_test(R,perc,splt):    #split the data into training and test by 
     k = int(math.ceil(perc*U*I/100))  #5% test data.
     flat_indx = random.choice(xrange(U*I),k,replace=False)
     R_test = np.zeros(shape=(U,I))
+    R_train = np.copy(R)
     if len(flat_indx) == 0:
-        return R,R_test
+        return R_train,R_test
     Indx = np.unravel_index(flat_indx,(U,I))
     R_test[Indx] = R[Indx]
-    R[Indx] = 0
-    return R,R_test
+    R_train[Indx] = 0
+    return R_train,R_test
 #########################################################################################
 def get_item_item_sim(V):  #get the
     D = cosine_similarity(V)
