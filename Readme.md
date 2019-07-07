@@ -1,4 +1,4 @@
-# Risk Aware Top-k Recommendations
+# Risking for Personalization
 Given the items embeddings, the algorithm ranks the recommendations based on risk maximization such that associated expected payoff values are maximum
 ### Prerequisites
 The following modules needs to be installed
