@@ -1,5 +1,5 @@
 # Risk Aware Top-k Recommendations
-The algorithm to re-rank the recommendation list considering the risks associated with the expected payoff values
+Given the items embeddings, the algorithm ranks the recommendations based on risk maximization such that associated expected payoff values are maximum
 ### Prerequisites
 The following modules needs to be installed
 
